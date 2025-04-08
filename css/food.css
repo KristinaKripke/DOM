@@ -1,0 +1,39 @@
+.food-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.food-list .food {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.food-list .img {
+    width: 100%;
+    height: 8rem;
+    object-fit: contain;
+}
+
+.food-list .title {
+    font-weight: bold;
+}
+
+.food-list .price {
+    font-weight: bold;
+    color: #f93;
+}
+
+.food-list .availability {
+    color: #999;
+}
+
+.food-list .availability span {
+    color: black;
+}

@@ -16,7 +16,6 @@ for (const li of liDOM) {
     li.textContent = li.textContent.repeat(3) + '?';
 }
 
-
 const colors = ['yellow', 'green', 'red', 'purple'];
 const vegsDOM = document.querySelectorAll('ol li');
 
