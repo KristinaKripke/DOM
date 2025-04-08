@@ -22,23 +22,31 @@ const timer = setInterval(() => {
 let pTime = 0;
 setInterval(() => {
     pDOM.textContent = (pTime++ / 100) + 's';
-}, 1000);
+}, 10);
 
 const vegetables = ['Pomidoras', 'Agurkas', 'Svogunas', 'Bulve'];
-
 const vegsDOM = document.querySelector('.vegs');
-
-vegsDOM.innerHTML = '<li>Bananas</li>';
+let vegsHTML = '';
 
 for (const veg of vegetables) {
     vegsDOM.innerHTML += `<li>${veg}</li>`;
 }
+
+vegsDOM.innerHTML =vegsHTML;
 
 const names = ['Jonas', 'Maryte', 'Petras', 'Ona'];
 const namesDOM = document.querySelector('.names');
 
 for (const name of names) {
     namesDOM.insertAdjacentHTML('beforeend', `<li>${name}</li>`);
+}
+
+const fonts = ['Arial', 'xxx', 'Verdana', 'Tahoma', 'cursive', 'sans-serif'];
+const fontsDOM = document.querySelector('.fonts');
+
+for (const font of fonts) {
+    const HTML = `<li style="font-family: ${font};">${font}</li>`;
+    fontsDOM.insertAdjacentHTML('beforeend', HTML);
 }
 
 

@@ -2,8 +2,7 @@ import { foodList } from "../data/pizza.js";
 import { foodBlock } from "../components/foodBlock.js";
 
 const currency = 'Eur';
-
-const foodListDOM = document.querySelector('food-list');
+const foodListDOM = document.querySelector('.food-list');
 
 let HTML = '';
 
