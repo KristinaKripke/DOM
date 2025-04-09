@@ -1,4 +1,4 @@
-import { header } from "../components/header";
+import { header } from "../components/header.js";
 header();
 
 const titleDOM = document.getElementById('title');
