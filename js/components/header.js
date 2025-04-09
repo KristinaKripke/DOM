@@ -1,11 +1,11 @@
 export function header() {
     const menu = [
-        {text: 'Home', href: '/'},
-        {text: 'Text', href: '/text'},
-        {text: 'Food', href: '/food'},
-        {text: 'Darzas', href: '/darzas'},
-        {text: 'Header', href: '/header'},
-        {text: 'Click', href: '/click'},
+        {text: 'Home', href: 'DOM/'},
+        {text: 'Text', href: 'DOM/text'},
+        {text: 'Food', href: 'DOM/food'},
+        {text: 'Darzas', href: 'DOM/darzas'},
+        {text: 'Header', href: 'DOM/header'},
+        {text: 'Click', href: 'DOM/click'},
 
     ];
 
