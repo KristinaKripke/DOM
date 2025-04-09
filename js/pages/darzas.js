@@ -1,3 +1,8 @@
+import { header } from '../components/header.js';
+header ();
+
+
+
 const h1DOM = document.querySelector('h1');
 const titleDOM = document.querySelector('title');
 const pDOM = document.querySelector('p');
@@ -21,8 +26,8 @@ const timer = setInterval(() => {
 
 let pTime = 0;
 setInterval(() => {
-    pDOM.textContent = (pTime++ / 100) + 's';
-}, 10);
+    pDOM.textContent = (pTime++ / 1000) + 's';
+}, 1000);
 
 const vegetables = ['Pomidoras', 'Agurkas', 'Svogunas', 'Bulve'];
 const vegsDOM = document.querySelector('.vegs');

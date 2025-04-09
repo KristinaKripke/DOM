@@ -1,3 +1,6 @@
+import { header } from "../components/header.js";
+header();
+
 const h1DOM = document.getElementsByTagName('h1');
 
 const ulDOM = document.getElementsByTagName('ul');

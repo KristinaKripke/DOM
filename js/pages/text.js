@@ -1,3 +1,6 @@
+import { header } from "../components/header";
+header();
+
 const titleDOM = document.getElementById('title');
 
 titleDOM.textContent = 'Pomidoras'; // visas turinys //
