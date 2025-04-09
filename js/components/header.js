@@ -23,7 +23,7 @@ export function header() {
 
     const HTML = `
     <header class="main-header">
-        <img class="logo" src="../food/pizza.png" alt="Logo">
+        <img class="logo" src="../DOM/food/pizza.png" alt="Logo">
         <nav class="main-nav">${linksHTML}</nav>
     </header>`;
 
