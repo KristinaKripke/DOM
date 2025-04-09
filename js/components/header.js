@@ -22,7 +22,7 @@ export function header() {
 
     const HTML = `
     <header class="main-header">
-        <img class="logo" src="./food/pizza.webp" alt="Logo">
+        <img class="logo" src="../food/pizza.webp" alt="Logo">
         <nav class="main-nav">${linksHTML}</nav>
     </header>`;
 
