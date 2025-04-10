@@ -1,7 +1,7 @@
 export function header() {
     
     if (location.hostname !== 'localhost') {
-        document.head.insertAdjacentHTML('afterbegin', '<base> href="https://kristinakripke.github.io/DOM/"</base>');
+        document.head.insertAdjacentHTML('afterbegin', '<base>href="https://kristinakripke.github.io/DOM/"</base>');
     }
     
     const menu = [
@@ -27,7 +27,7 @@ export function header() {
 
     const HTML = `
     <header class="main-header">
-        <img class="logo" src="./food/pizza.webp" alt="Logo">
+        <img class="logo" src="../food/pizza.webp" alt="Logo">
         <nav class="main-nav">${linksHTML}</nav>
     </header>`;
 
