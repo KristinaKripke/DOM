@@ -1,7 +1,7 @@
 export function header() {
-    
+    const base = "https://kristinakripke.github.io/DOM/";
     if (location.hostname !== 'localhost') {
-        document.head.insertAdjacentHTML('afterbegin', '<base>href="https://kristinakripke.github.io/DOM/"</base>');
+        document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
     }
     
     const menu = [
