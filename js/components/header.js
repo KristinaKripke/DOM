@@ -1,5 +1,5 @@
 export function header() {
-    let base = 'http://localhost:5424/';
+    let base = 'http://localhost:5424';
     let projectName = '';
     if (location.hostname !== 'localhost') {
         projectName = '/DOM';
@@ -14,6 +14,7 @@ export function header() {
         {text: 'Darzas', href: '/darzas/'},
         {text: 'Header', href: '/header/'},
         {text: 'Click', href: '/click/'},
+        {text: 'Like', href: '/like/'},
     ];
 
     const lp = location.pathname; 
