@@ -1,16 +1,18 @@
 export function header() {
-    const base = "https://kristinakripke.github.io/DOM/";
+    let base = 'http://localhost:5424/';
+
     if (location.hostname !== 'localhost') {
-        document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
-    }
+        base = "https://kristinakripke.github.io/DOM/";
+        
+    } document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
     
     const menu = [
-        {text: 'Home', href: './'},
-        {text: 'Text', href: './text'},
-        {text: 'Food', href: './food'},
-        {text: 'Darzas', href: './darzas'},
-        {text: 'Header', href: './header'},
-        {text: 'Click', href: './click'},
+        {text: 'Home', href: '/'},
+        {text: 'Text', href: '/text/'},
+        {text: 'Food', href: '/food/'},
+        {text: 'Darzas', href: '/darzas/'},
+        {text: 'Header', href: '/header/'},
+        {text: 'Click', href: '/click/'},
     ];
 
     const lp = location.pathname; 
