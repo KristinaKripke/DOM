@@ -1,7 +1,8 @@
 export function header() {
     let base = 'http://localhost:5424/';
-
+    let projectName = '';
     if (location.hostname !== 'localhost') {
+        projectName = '/DOM';
         base = "https://kristinakripke.github.io/DOM/";
         
     } document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
@@ -21,7 +22,7 @@ export function header() {
 
     for (const link of menu) {
         let activePage = '';
-        if (link.href === currentPage) {
+        if (projectName + link.href === location.pathname) {
             activePage = 'active';
         }
         linksHTML += `<a class="link ${activePage}" href=".${link.href}">${link.text}</a>`;
