@@ -1,5 +1,5 @@
 export function header() {
-    let base = 'http://localhost:5424';
+    let base = 'http://localhost:5424/';
     let projectName = '';
     if (location.hostname !== 'localhost') {
         projectName = '/DOM';
@@ -36,4 +36,4 @@ export function header() {
     </header>`;
 
     document.body.insertAdjacentHTML('afterbegin', HTML);  // toks priejimas veikia tik su body, galima net nerasyti const
-}
+};
