@@ -25,7 +25,7 @@ export function header() {
         if (projectName + link.href === location.pathname) {
             activePage = 'active';
         }
-        linksHTML += `<a class="link ${activePage}" href=".${link.href}">${link.text}</a>`;
+        linksHTML += `<a class="link ${activePage}" href=".${link.href}" target="_blank">${link.text}</a>`;
     }
 
     const HTML = `
